@@ -1,0 +1,50 @@
+Objects -------------------------------------------------------------------------------------------
+Box:
+	width
+	height
+	x
+	y
+	color
+	number
+	
+	draw(graphics)
+	
+SelectedBox (Box):
+	path: vector of moves
+
+	moveTo(x, y, time)
+	
+AutoBox (Box):
+	path: vector of moves
+	pos
+	
+	update(time):
+		
+	
+Move:
+	int x
+	int y
+	float time
+	
+BoxColor:
+	static list of colors
+	
+Board:
+	boxes
+	
+	update(time)
+	touched(x, y)
+	draw(graphics)
+	checkCollision()
+
+Screens ------------------------------------------------------------------------------------------
+GameScreen:
+	board
+	time
+	
+	update() #get input
+	draw()
+	
+GUI ----------------------------------------------------------------------------------------------
+
+	
